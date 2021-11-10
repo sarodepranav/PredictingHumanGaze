@@ -10,3 +10,7 @@ Generated Saliency Maps for the given inputs -
 
 Comparison of our model with other popular models - 
 ![image](https://user-images.githubusercontent.com/39979059/141195694-b21d16a5-6a97-4ea2-b2c7-5f1a64a93081.png)
+
+An important point to note here is that we did not train our model on the MIT1003 dataset that is used by other saliency models to train in order to train and fine tune their
+models for the benchmarking. As we can see from the table, our model has a significantly different value for KL Divergence on this benchmark owing to the reason
+stated above and its mechanism as well, which considers the outputs as probability functions and gives less output only when the outputs are very similar.
